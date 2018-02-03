@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>A Basic Form</title>
+    </head>
+    <body>
+        <div class="container-fluid>">
+            <div class="card" >
+                <div class="card-header">
+                    <h5 class="card-title">Sample Form</h5>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <!--This is the left side column of content-->
+                            <div class="col-lg-6">
+                                
+                                <!--the gender input-->
+                                <div class="form-group row">
+                                    <label for="genderSelect" class="col-lg-2">Gender</label>
+                                    <div class="col-lg-10"> 
+                                        <select class="form-control" id="genderSelect">
+                                          <option>Male</option>
+                                          <option>Female</option>
+                                          <option>Non-binary</option>
+                                          <option>Other</option>
+                                          <option>Prefer not to say</option>
+                                        </select>
+                                        <small id="genderSelect" class="form-text text-muted"><p>Please select an option.</p></small>
+                                    </div>
+                                </div>
+                                
+                                 <!--the birthday input-->
+                                 <div class="form-group row">
+                                     <label for="birthdaySelect" class="col-lg-2"> Birthdate </label>
+                                     <div class="col-lg-10">
+                                         <div class="input-group">
+                                             <input type="date" class="form-control">
+                                             <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                              </div>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                             <!--the security answer input-->
+                                 <div class="form-group row">
+                                     <label for="securitySelect" class="col-lg-2"> Security </label>
+                                     <div class="col-lg-10">
+                                            <input type="textarea" name="securitySelect" class="form-control">
+                                            <small id="securitySelect" class="form-text text-muted"><p>Click here to clear.</p></small>
+                                     </div>
+                                 </div>
+
+                             <!--the phone number input-->
+                                 <div class="form-group row">
+                                        <label for="phoneInput" class="col-lg-2 col-form-label">Telephone</label>
+                                    <div class="col-lg-10">
+                                        <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+                                    </div>
+                                </div>
+
+                            <!--the money input-->
+                                 <div class="form-group row">
+                                     <label for="birthdaySelect" class="col-lg-2"> Birthdate </label>
+                                     <div class="col-lg-10">
+                                         <div class="input-group">
+                                             <input type="date" class="form-control">
+                                             <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                              </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                            
+                            </div>
+                            <!--the end of column 1-->
+                            
+                            
+                                                        <!--This is the right side column of content-->
+                             <div class="col-lg-6">
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1" class="col-lg-2">Email</label>
+                                    <div class="col-lg-10"> 
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted"><p>We'll never share your email with anyone else.</p></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>       
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
