@@ -1,0 +1,16 @@
+
+body {
+    padding: 15px;
+}
+
+label {
+    font-weight: bold;
+    max-width: 100%;
+    text-align: right;
+   
+}
+
+.buttonSelect {
+    margin-left: 18%;
+}
+

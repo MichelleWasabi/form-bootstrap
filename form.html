@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css" type="text/css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <title>A Basic Form</title>
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
         <div class="container-fluid>">
@@ -35,61 +35,120 @@
                                 
                                  <!--the birthday input-->
                                  <div class="form-group row">
-                                     <label for="birthdaySelect" class="col-lg-2"> Birthdate </label>
+                                     <label for="birthdaySelect" class="col-lg-2">Birthdate</label>
                                      <div class="col-lg-10">
                                          <div class="input-group">
                                              <input type="date" class="form-control">
                                              <div class="input-group-append">
-                                                <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                                <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
                                               </div>
-                                         </div>
+                                        </div>
+                                       <small id="birthdaySelect" class="form-text text-muted"><p>Select valid date.</p></small>
+
                                      </div>
                                  </div>
 
                              <!--the security answer input-->
                                  <div class="form-group row">
-                                     <label for="securitySelect" class="col-lg-2"> Security </label>
+                                     <label for="securitySelect" class="col-lg-2">Security Answer</label>
                                      <div class="col-lg-10">
-                                            <input type="textarea" name="securitySelect" class="form-control">
-                                            <small id="securitySelect" class="form-text text-muted"><p>Click here to clear.</p></small>
-                                     </div>
+                                         <div class="input-group">
+                                            <input type="text" name="securitySelect" class="form-control">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fas fa-times"></i></span>
+                                            </div>
+                                        </div> 
+                                        <small id="securitySelect" class="form-text text-muted"><p>Click <span><i class="fas fa-times mx-2"></i></span> here to clear contents.</p></small>
+                                    </div>
                                  </div>
 
                              <!--the phone number input-->
                                  <div class="form-group row">
-                                        <label for="phoneInput" class="col-lg-2 col-form-label">Telephone</label>
+                                        <label for="phoneInput" class="col-lg-2 col-form-label">Telephone Number</label>
                                     <div class="col-lg-10">
-                                        <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+                                        <input class="form-control" type="tel" id="example-tel-input">
                                     </div>
                                 </div>
 
                             <!--the money input-->
                                  <div class="form-group row">
-                                     <label for="birthdaySelect" class="col-lg-2"> Birthdate </label>
-                                     <div class="col-lg-10">
-                                         <div class="input-group">
-                                             <input type="date" class="form-control">
-                                             <div class="input-group-append">
-                                                <span class="input-group-text" id="basic-addon2">@example.com</span>
-                                              </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                            
-                            </div>
+                                    <label for="moneySelect"  class="col-sm-2 col-form-label" >
+                                    Money Collects
+                                    </label>
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                        <span class="input-group-text"> <i class="fa fa-dollar-sign"></i></span>
+                                        <input class="form-control" id="moneySelect1" name="moneySelect1" type="number">
+                                        </div>
+                                        <small id="moneySelect1" class="form-text text-muted"><p>First</p></small>
+                                    </div>
+                                    
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                        <span class="input-group-text"> <i class="fa fa-dollar-sign"></i></span>
+                                        <input class="form-control" id="moneySelect2" name="moneySelect2" type="number">
+                                        </div>
+                                        <small id="moneySelect2" class="form-text text-muted"><p>Second</p></small>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                            <span class="input-group-text"> <i class="fa fa-dollar-sign"></i></span>
+                                            <input class="form-control" id="moneySelect3" name="moneySelect3" type="number">
+                                        </div>
+                                        <small id="moneySelect3" class="form-text text-muted"><p>Third</p></small>
+                                    </div>
+                                </div>
+                        </div>
                             <!--the end of column 1-->
                             
                             
-                                                        <!--This is the right side column of content-->
+                             <!--This is the right side column of content-->
                              <div class="col-lg-6">
+                                 
+                                 <!--the email input-->
                                 <div class="form-group row">
                                     <label for="exampleInputEmail1" class="col-lg-2">Email</label>
                                     <div class="col-lg-10"> 
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                        <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                                         <small id="emailHelp" class="form-text text-muted"><p>We'll never share your email with anyone else.</p></small>
                                     </div>
                                 </div>
-                            </div>
+                                
+                                 <!--the password input-->
+                                <div class="form-group row">
+                                    <label for="exampleInputEmail1" class="col-lg-2">Password</label>
+                                    <div class="col-lg-10"> 
+                                        <input type="password" class="form-control form-control-sm" id="passwordSelect" aria-describedby="passwordSelect" placeholder="Enter password">
+                                        <small id="passwordSelect" class="form-text text-muted"><p>Must use numbers, letters, and a special character (e.g. !@#)</p></small>
+                                    </div>
+                                </div>
+                                
+                                 <!--the comments  input-->
+                                <div class="form-group row">
+                                    <label for="commentsSelect" class="col-lg-2">Do you have any special comments?</label>
+                                    <div class="col-lg-10"> 
+                                        <textarea class="form-control" id="commentsSelect" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                
+                                 <!--the age  input-->
+                                <div class="form-group row">
+                                    <label for="ageSelect" class="col-lg-2">Age</label>
+                                    <div class="col-lg-10"> 
+                                        <input type="number" class="form-control form-control-sm" id="ageSelect" aria-describedby="ageSelect">
+                                        <small id="emailHelp" class="form-text text-muted"><p>How old are you?</p></small>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group-row">
+                                    <div class="col-lg-10">
+                                        <div class="buttonSelect">
+                                            <button type="button" class="btn btn-danger btn-lg">Cancel<span><i class="fas fa-times mx-2"></i></span></button>
+                                            <button type="button" class="btn btn-warning btn-lg">Reset<span><i class="fas fa-sync mx-2"></i></span></button>
+                                            <button type="button" class="btn btn-primary btn-lg">Save<span><i class="fas fa-cloud-upload-alt mx-2"></i></span></button>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </form>       
                 </div>
